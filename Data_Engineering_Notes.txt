@@ -1,0 +1,38 @@
+Data Engineering
+
+Everything around us produces data. A zoom call produces data on the participants logging activity, duration of meeting, recordings etc. 
+Any source that produces data is a data source. 
+The data collected from these sources can be stored in databases. However, with the increase in the amount of data and the type of data, we need a versatile source to store data. 
+The centralised databased unit is a data warehouse. eg: Amazon Redshift, Google Bigquery
+
+
+
+Big Data
+Datasets with 5 V
+1. Volume : Amount of data that is sent from data source to data warehouse.
+2. Velocity : Rate at which data is getting added to data warehouse. 3 TB of data every month
+3. Variety: Different types of data. Structured data, videos, audio etc
+4. Veracity : Accuracy of the data. 
+5. Value : Huge anounts of data is of no use unless we can get value of it.
+
+Hadoop
+- It is a framework. 
+- It is open source. 
+- Started to address bigdata storage and process issues. 
+- Master slave architecture. One master to handle/manage the task. Multiple slaves to create redundancy and also to complete big tasks which cannot be completed by 1 slave. 
+- Parallel distribution is possible due to multiple slaves. 
+- Every master, slave is a computer/node in itself. 
+- The group of master and slave is called a cluster. 
+- When we need more storage or processing capacity, we can add more nodes. Hence hadoop allows horizontal scalability. 
+- Hadoop can use comodity/general purpose hardware to add to the cluster. 
+- Say we have 4TB of data to store. We send this information to master node. In this case For example : The master node will divide the  data to 4 parts and stores them in slave1,2,4,4. So the data is distributed. 
+- The storage issue is resolved using the hadoop distributed file system.
+- The master data stores metadata (data about data.. Which slave nodes have the data distributed in them. What nodes to access to fetch a certain file, etc)
+- Mapreduce was started to help with the processing issue. 
+- Map Reduce and HDFS are the core components of Hadoop system. 
+- Pig is an alternative to Map Reduce. It is a scripting language. Map Reduce is only a programming model. We still need a scripting language to build Map Reduce. That can be Java and Python. So here is where Pig is useful.
+- Hive was developed by Facebook. It is same as SQL. 
+- Hbase is no SQL. - Column oriented databases. Maintain entire data using a single column.
+- Sqoop - to immport data from RDBMS to Hadoop
+- Flume - Import streaming data from large log files into Hadoop. 
+- Oozie - Scheduler - Multiple pipeline to maintain data.
