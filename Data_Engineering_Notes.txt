@@ -1,0 +1,16 @@
+Data Engineering
+
+Everything around us produces data. A zoom call produces data on the participants logging activity, duration of meeting, recordings etc. 
+Any source that produces data is a data source. 
+The data collected from these sources can be stored in databases. However, with the increase in the amount of data and the type of data, we need a versatile source to store data. 
+The centralised databased unit is a data warehouse. eg: Amazon Redshift, Google Bigquery
+
+
+
+Big Data
+Datasets with 5 V
+1. Volume : Amount of data that is sent from data source to data warehouse.
+2. Velocity : Rate at which data is getting added to data warehouse. 3 TB of data every month
+3. Variety: Different types of data. Structured data, videos, audio etc
+4. Veracity : Accuracy of the data. 
+5. Value : Huge anounts of data is of no use unless we can get value of it. 
